@@ -1,0 +1,286 @@
+{
+  "output": "output/minimum_vs_average_wage_EU_2000_2025.mp4",
+  "video": {
+    "size": [
+      1080,
+      1920
+    ],
+    "fps": 60
+  },
+  "timing": {
+    "intro": 2.0,
+    "race": 65.0,
+    "hold": 1.6,
+    "outro": 4.6,
+    "event_seconds": 2.8
+  },
+  "data": {
+    "csv": "data/values.csv",
+    "period_col": "period",
+    "code_col": "code"
+  },
+  "series": [
+    {
+      "col": "minimum",
+      "label": "Minimum wage",
+      "color_from": "#FF9A76",
+      "color_to": "#F2557A",
+      "ratio_to": "average"
+    },
+    {
+      "col": "average",
+      "label": "Average wage",
+      "color_from": "#6EF0C2",
+      "color_to": "#1FB98A"
+    }
+  ],
+  "ranking": {
+    "sort_by": "minimum",
+    "order": "desc",
+    "top_n": 8,
+    "pinned_dynamic": [
+      "max",
+      "min"
+    ],
+    "smooth_window": 3,
+    "slot_fade_seconds": 0.7,
+    "swap": {
+      "threshold": 1.02,
+      "hold_seconds": 0.33,
+      "cooldown_seconds": 0.5,
+      "instant": 1.03,
+      "spring_k": 0.028
+    }
+  },
+  "entities": {
+    "BE": {
+      "name": "Belgium",
+      "flag": "be",
+      "sub": ""
+    },
+    "BG": {
+      "name": "Bulgaria",
+      "flag": "bg",
+      "sub": ""
+    },
+    "CZ": {
+      "name": "Czechia",
+      "flag": "cz",
+      "sub": ""
+    },
+    "DE": {
+      "name": "Germany",
+      "flag": "de",
+      "sub": ""
+    },
+    "EE": {
+      "name": "Estonia",
+      "flag": "ee",
+      "sub": ""
+    },
+    "IE": {
+      "name": "Ireland",
+      "flag": "ie",
+      "sub": ""
+    },
+    "EL": {
+      "name": "Greece",
+      "flag": "gr",
+      "sub": ""
+    },
+    "ES": {
+      "name": "Spain",
+      "flag": "es",
+      "sub": ""
+    },
+    "FR": {
+      "name": "France",
+      "flag": "fr",
+      "sub": ""
+    },
+    "HR": {
+      "name": "Croatia",
+      "flag": "hr",
+      "sub": ""
+    },
+    "CY": {
+      "name": "Cyprus",
+      "flag": "cy",
+      "sub": ""
+    },
+    "LV": {
+      "name": "Latvia",
+      "flag": "lv",
+      "sub": ""
+    },
+    "LT": {
+      "name": "Lithuania",
+      "flag": "lt",
+      "sub": ""
+    },
+    "LU": {
+      "name": "Luxembourg",
+      "flag": "lu",
+      "sub": ""
+    },
+    "HU": {
+      "name": "Hungary",
+      "flag": "hu",
+      "sub": ""
+    },
+    "MT": {
+      "name": "Malta",
+      "flag": "mt",
+      "sub": ""
+    },
+    "NL": {
+      "name": "Netherlands",
+      "flag": "nl",
+      "sub": ""
+    },
+    "PL": {
+      "name": "Poland",
+      "flag": "pl",
+      "sub": ""
+    },
+    "PT": {
+      "name": "Portugal",
+      "flag": "pt",
+      "sub": ""
+    },
+    "RO": {
+      "name": "Romania",
+      "flag": "ro",
+      "sub": ""
+    },
+    "SI": {
+      "name": "Slovenia",
+      "flag": "si",
+      "sub": ""
+    },
+    "SK": {
+      "name": "Slovakia",
+      "flag": "sk",
+      "sub": ""
+    }
+  },
+  "value_format": {
+    "prefix": "€",
+    "suffix": "",
+    "decimals": 0,
+    "compact": false,
+    "unit_suffix": "/mo"
+  },
+  "text": {
+    "title": "MINIMUM vs AVERAGE WAGE",
+    "subtitle": "Gross pay per month in € · EU 2000-2025",
+    "show_legend": true,
+    "show_month": false,
+    "show_rank": true,
+    "max_label": "HIGHEST MINIMUM WAGE",
+    "min_label": "LOWEST MINIMUM WAGE",
+    "footer": "Gross € per month · % = minimum wage as a share of the average wage · Sources at the end",
+    "outro_title": "Highest minimum wage in the EU, 2025",
+    "sources_label": "DATA SOURCES",
+    "cta": "Where would you rather earn the minimum?"
+  },
+  "events": [
+    [
+      "2004-05",
+      "2004 · EU grows by 10 countries"
+    ],
+    [
+      "2007-01",
+      "2007 · Bulgaria and Romania join the EU"
+    ],
+    [
+      "2008-10",
+      "2008 · Global financial crisis"
+    ],
+    [
+      "2012-03",
+      "2012 · Greece cuts its minimum wage by 22%"
+    ],
+    [
+      "2015-01",
+      "2015 · Germany introduces a minimum wage"
+    ],
+    [
+      "2019-01",
+      "2019 · Spain raises its minimum wage by 22%"
+    ],
+    [
+      "2022-06",
+      "2022 · Inflation surge: record minimum wage hikes"
+    ],
+    [
+      "2023-01",
+      "2023 · Cyprus introduces a minimum wage"
+    ],
+    [
+      "2024-11",
+      "2024 · EU minimum wage directive takes effect"
+    ]
+  ],
+  "sources": [
+    "Eurostat · Minimum wages (earn_mw_cur)",
+    "Eurostat · Average full-time adjusted salary (nama_10_fte)",
+    "Eurostat · Earnings of the average worker (earn_nt_net)"
+  ],
+  "theme": {
+    "bg_top": "#171A2B",
+    "bg_bottom": "#0A0B14",
+    "text": "#F2F3F8",
+    "muted": "#9AA0B4",
+    "dim": "#767C92",
+    "card_top": "#262A3D",
+    "card_bottom": "#191C2B",
+    "bar_hi": "#F7F8FB",
+    "bar_lo": "#C6CAD6",
+    "bar_extrude": "#5E6478",
+    "accent": "#FF9A76",
+    "glows": [
+      "#F2557A",
+      "#1FB98A"
+    ],
+    "leader": "#FFD36E",
+    "lowest": "#8FA3C7",
+    "depth_3d": "medium",
+    "bokeh": true,
+    "year_glow": "#FFB199"
+  },
+  "music": {
+    "mode": "synth",
+    "bpm": 96,
+    "seed": 11,
+    "lufs": -14,
+    "chords": [
+      [
+        57,
+        62,
+        65
+      ],
+      [
+        58,
+        62,
+        65
+      ],
+      [
+        57,
+        60,
+        65
+      ],
+      [
+        55,
+        60,
+        64
+      ]
+    ],
+    "bass": [
+      38,
+      46,
+      41,
+      48
+    ]
+  }
+}
